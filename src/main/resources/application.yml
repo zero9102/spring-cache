@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: i2021-cache
+  redis:
+    host: 127.0.0.1
+    port: 6379
+  cache:
+    type: redis
+    redis:
+      time-to-live: 3600000
+
+server:
+  port: 9088
+
+test:
+  list:
+    - aaa
+    - bbb
+    - ccc
+  list1: aaa,bbb,ccc
+  set: 111, 222, 333, 444, 111
+  map1: '{"name": "zhangsan", "sex": "male"}'
+  map2: '{"id": 1111, "age": 18}'
+#  map3: '{"id": 1111, "age": 18}'
+  array1: aaa,bbb,ccc
+  array2: 111,222,333
+
+
+
+
